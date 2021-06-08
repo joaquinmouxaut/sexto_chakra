@@ -1,0 +1,38 @@
+{
+  "name": "jm_inicio_standard",
+  "version": "1.0.0",
+  "description": "Inicio standard para mis proyectos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaquinmouxaut/jm_inicio_standard.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP",
+    "NPN",
+    "NODE"
+  ],
+  "author": "Joaquin Mouxaut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaquinmouxaut/jm_inicio_standard/issues"
+  },
+  "homepage": "https://github.com/joaquinmouxaut/jm_inicio_standard#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.5",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-util": "^3.0.8",
+    "gulp-webp": "^4.0.1",
+    "uglify-js": "^3.13.9"
+  }
+}
