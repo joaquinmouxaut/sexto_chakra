@@ -1,0 +1,48 @@
+.hero {
+    height: 100vh;
+    min-height: 60rem; /* =600px */
+    background-image: url(/build/img/WEB-02.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.barra {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#111111+0,111111+100&1+0,0+100 */
+    background: -moz-linear-gradient(top,  rgba(17,17,17,1) 0%, rgba(17,17,17,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(17,17,17,1) 0%,rgba(17,17,17,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(17,17,17,1) 0%,rgba(17,17,17,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#00111111',GradientType=0 ); /* IE6-9 */
+    
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        height: 10rem;
+        margin: 2rem auto;
+    }
+
+    .navegacion {
+        display: flex;
+        column-gap: 3rem;
+    }
+
+    .navegacion-enlace {
+        color: white;
+    }
+}
+
+.slogan {
+    margin: calc(50vh - 25rem) auto;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+        max-height: 30rem;
+    }
+}
+
