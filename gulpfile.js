@@ -1,6 +1,5 @@
 const { series, src, dest, watch } = require( 'gulp' );
 const sass = require( 'gulp-dart-sass' );
-const imagemin = require( 'gulp-imagemin' );
 const webp = require( 'gulp-webp' );
 const concat = require( 'gulp-concat' );
 
@@ -31,12 +30,6 @@ function javascript() {
         .pipe( dest( './build/js' ) );
 }
 
-function minificarImagen() {
-    return src( './src/img/**/*' )
-        .pipe( imagemin() )
-        .pipe( dest( './build/img' ) );
-}
-
 function versionWebp() {
     return src( './src/img/**/*' )
     .pipe( webp() )
@@ -48,4 +41,4 @@ function watchArchivos() {
     watch( './src/js/**/*.js', javascript );
 }
 
-exports.default = series( css, javascript, minificarImagen, versionWebp, watchArchivos );
+exports.default = series( css, javascript, versionWebp, watchArchivos );

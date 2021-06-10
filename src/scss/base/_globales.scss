@@ -1,4 +1,5 @@
 html {
+    width: 100%;
     font-size: 62.5%; //10px = 1rem
     box-sizing: border-box;
 }
@@ -10,11 +11,12 @@ body {
     font-family: $fuentePrincipal;
     font-size: 1.6rem;
     line-height: 1.5;
+    background-color: $negro;
+    color: white;
 }
 
 p {
-    font-size: 1.56rem;
-    color: $negro;
+    font-size: 1.5rem;
 }
 
 .contenedor {
@@ -25,7 +27,7 @@ p {
 
 a {
     text-decoration: none;
-    font-size: 3.05rem;
+    font-size: 3.4rem;
     font-weight: $bold;
 }
 
@@ -40,14 +42,15 @@ h1, h2, h3 {
     text-align: center;
 }
 h1 {
-    font-size: 3.81rem;
+    font-size: 7.6rem;
 }
 h2 {
-    font-size: 3.05rem;
+    font-size: 5rem;
+    font-family: $fuenteSecundaria;
 }
 h3 {
-    font-size: 2.44rem;
+    font-size: 3.4rem;
 }
 h4 {
-    font-size: 1.95rem;
+    font-size: 2.2rem;
 }
