@@ -1,0 +1,24 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+
+    .datos {
+        margin: auto 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    margin-bottom: 10rem;
+}

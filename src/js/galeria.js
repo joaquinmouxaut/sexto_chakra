@@ -11,6 +11,7 @@ function crearGaleria() {
 
         const enlace = document.createElement( 'A' );
         enlace.appendChild( imagen );   
+        enlace.href = `/proyectos/proyecto${i}`;
         enlace.classList.add(`imagen-${i}`)
 
         galeria.appendChild( enlace );
