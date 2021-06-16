@@ -41,4 +41,5 @@ function watchArchivos() {
     watch( './src/js/**/*.js', javascript );
 }
 
+exports.build = series( css, javascript, versionWebp);
 exports.default = series( css, javascript, versionWebp, watchArchivos );
