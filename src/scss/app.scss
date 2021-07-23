@@ -3,9 +3,12 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/globales';
+@import 'base/utilidades.scss';
 
 @import 'layout/header';
 @import 'layout/trabajos';
 @import 'layout/nosotros';
 @import 'layout/contacto';
 @import 'layout/footer';
+
+@import 'proyectos/proyecto';
