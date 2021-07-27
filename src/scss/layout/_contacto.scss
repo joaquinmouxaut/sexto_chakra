@@ -1,6 +1,8 @@
 .info {
-    display: flex;
-    justify-content: space-between;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;    
+    }
 
     .datos {
         margin: auto 0;

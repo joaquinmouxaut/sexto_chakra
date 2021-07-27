@@ -1,6 +1,14 @@
+.nosotros {
+    p {
+        text-align: center;
+    }
+}
+
 .integrantes {
-    display: flex;
-    justify-content: space-evenly;
+    @include tablet {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     .integrante {
         text-align: center;

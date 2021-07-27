@@ -13,7 +13,6 @@
 .cerrar {
     display: flex;
     justify-content: flex-end;
-    background-color: rgba($negro, .5);
     height: 4rem;
     line-height: 1;
 
@@ -22,6 +21,10 @@
         font-size: 4rem;
         font-weight: $light;
         color: $grisClaro;
+    }
+
+    .icon {
+        filter: drop-shadow( 1px 1px 0px #888 );
     }
 }
 
