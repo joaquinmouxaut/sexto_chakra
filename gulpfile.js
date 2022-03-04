@@ -55,4 +55,4 @@ function migrarHTML() {
 
 exports.minify = series(migrarHTML);
 exports.build = series( css, javascript, versionWebp);
-exports.default = series( css, javascript, versionWebp, watchArchivos );
+exports.default = series( migrarHTML, css, javascript, versionWebp, watchArchivos );
