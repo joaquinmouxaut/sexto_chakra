@@ -2,6 +2,7 @@ const { series, src, dest, watch } = require( 'gulp' );
 const sass = require( 'gulp-dart-sass' );
 const webp = require( 'gulp-webp' );
 const concat = require( 'gulp-concat' );
+const gulpIf = require('gulp-if');
 
 //Utilidades CSS
 const postcss = require( 'gulp-postcss' );
@@ -40,6 +41,16 @@ function watchArchivos() {
     watch( './src/scss/**/*.scss', css );
     watch( './src/js/**/*.js', javascript );
 }
+
+// function migrarHTML() {
+//     return src( './src/**/*' )
+//     .pipe(gulpIf('*.html', htmlmin({
+//         removeEmptyAttributes: true,
+//         removeAttributeQuotes: true,
+//         collapseBooleanAttributes: true,
+//         collapseWhitespace: true
+//     })))
+// }
 
 exports.build = series( css, javascript, versionWebp);
 exports.default = series( css, javascript, versionWebp, watchArchivos );

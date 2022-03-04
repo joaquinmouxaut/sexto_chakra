@@ -7,7 +7,7 @@ function crearGaleria() {
 
     for( let i = 1; i <= 11; i++ ) {
         const imagen = document.createElement( 'IMG' );
-        imagen.src = `build/img/Galeria-${i}.webp`;
+        imagen.src = `/build/img/Galeria-${i}.webp`;
 
         const enlace = document.createElement( 'A' );
         enlace.appendChild( imagen );   
