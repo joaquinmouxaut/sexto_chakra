@@ -18,10 +18,10 @@ function mostrarProyecto() {
 
     for( let i = 1; i <= 6; i++ ) {
         const imagen = document.createElement( 'IMG' );
-        imagen.src = `/build/img/${proyecto}/Imagen-${i}.webp`;
+        imagen.src = `./Imagen-${i}.webp`;
 
         if(i == 3) {
-            imagen.src = `/build/img/${proyecto}/Imagen-${i}.gif`;
+            imagen.src = `./Imagen-${i}.gif`;
         }
 
         console.log(imagen.src);
