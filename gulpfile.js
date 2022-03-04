@@ -12,6 +12,8 @@ const sourcemaps = require( 'gulp-sourcemaps' );
 //Utilidades JS
 const terser = require( 'gulp-terser-js' );
 
+//Utilidades HTML
+var htmlmin = require('gulp-htmlmin');
 
 function css() {
     return src( './src/scss/app.scss' )
@@ -42,15 +44,15 @@ function watchArchivos() {
     watch( './src/js/**/*.js', javascript );
 }
 
-// function migrarHTML() {
-//     return src( './src/**/*' )
-//     .pipe(gulpIf('*.html', htmlmin({
-//         removeEmptyAttributes: true,
-//         removeAttributeQuotes: true,
-//         collapseBooleanAttributes: true,
-//         collapseWhitespace: true
-//     })))
-// }
 
+function migrarHTML() {
+    return src('./src/index.html')
+    .pipe(htmlmin())
+    .pipe(dest('build/'));
+    
+}
+
+
+exports.minify = series(migrarHTML);
 exports.build = series( css, javascript, versionWebp);
 exports.default = series( css, javascript, versionWebp, watchArchivos );
